@@ -4,32 +4,73 @@
   box-sizing: border-box;
 }
 
+
+/* COLORS */
+
+.palette1{
+  background-color: #f96363;
+  transition: 2s;
+}
+
+.palette2{
+  background-color: #cc11f0;
+  transition: 2s;
+}
+
+.palette3{
+  color: #6300ff;
+  transition: 2s;
+}
+
+.palette4{
+  color: 	#ff008d;
+  transition: 2s;
+}
+
+.palette5{
+  background-color: #020204;
+  transition: 2s;
+}
+
+.palette6{
+  background-color: #204829;
+  transition: 2s;
+}
+
+.palette7{
+  color: #92e5a1;
+  transition: 2s;
+}
+
+.palette8{
+  color: 	#22b455;
+  transition: 2s;
+}
+
+
+
+/* REST */
+
 body{
   font-family: 'Train One', cursive;
-  background: #f96363;
 }
 
 header{
-  background: #cc11f0;
   text-align: center;
+  height: 20vh
 }
 
 header > h2{
-  color: #6300ff;
   font-size: 60px;
   padding: 40px 0;
 }
 
-header span{
-  color: 	#ff008d;
-}
-
 main{
   text-align: center;
+  height: 80vh
 }
 
 h1{
-  color: #ff008d;
   font-size: 100px;
   padding: 50px 0;
   text-decoration: underline;
@@ -50,12 +91,15 @@ h1{
   animation-iteration-count: infinite;
   filter: hue-rotate(100deg);
 }
+button{
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 20px;
+}
 
-.flex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+button:focus{
+  outline: none;
 }
 
 @keyframes huerotate {

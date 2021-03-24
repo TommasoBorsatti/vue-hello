@@ -11,24 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
+  <div  id="root">
 
-  <header>
-    <h2>Please welcome our new guest: <span>VUE JS</span>...</h2>
-  </header>
+    <header v-bind:class="palette2">
+      <h2 v-bind:class='palette3'>Please welcome our new guest: <span v-bind:class="palette4">VUE JS</span>...</h2>
+    </header>
 
-  <main>
-    <!-- Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
-    <div class="flex" id="root">
-        <div class="title-box">
-          <!-- l'h1 è vuoto; con la notazione a baffo vado a stampare il title contenuto in Data, collegando l'h1 in modo dinamico allo script di VUE -->
-          <h1>{{title}}</h1>
-        </div>
-        <div class="img-box">
-          <!-- Uso direttiva V-Bind per inserire un attributo prendendolo dallo script VUE -->
-          <img v-bind:src="imgLink" alt="Logo di VUE">
-        </div>
-    </div>
-    <!-- /Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
+    <main v-bind:class="palette1">
+      <div class="title-box">
+        <!-- l'h1 è vuoto; con la notazione a baffo vado a stampare il title contenuto in Data, collegando l'h1 in modo dinamico allo script di VUE -->
+        <h1 v-bind:class="palette4">{{title}}</h1>
+      </div>
+      <div class="img-box">
+        <!-- Uso direttiva V-Bind per inserire un attributo prendendolo dallo script VUE -->
+        <img v-bind:src="imgLink" alt="Logo di VUE">
+      </div>
+      <div class="button-box">
+        <button @click="messColorsUp" name="button">Mess Colors Up</button>
+      </div>
+      
+  </div>
+  <!-- /Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
   </main>
 
 <script src="js/script.js" charset="utf-8"></script>
