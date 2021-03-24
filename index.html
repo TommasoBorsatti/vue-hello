@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
   <!-- Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
@@ -28,9 +29,9 @@
         <img v-bind:src="imgLink" alt="Logo di VUE">
       </div>
       <div class="button-box">
-        <button @click="messColorsUp" name="button">Mess Colors Up</button>
+        <button v-bind:class="palette4" @click="messColorsUp" name="button"><strong>MESS COLORS UP</strong></button>
       </div>
-      
+
   </div>
   <!-- /Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
   </main>
