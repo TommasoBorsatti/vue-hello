@@ -7,9 +7,29 @@
   <title>Hello Vue!</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <header>
+    <h2>Please welcome our new guest: <span>VUE JS</span>...</h2>
+  </header>
+
+  <main>
+    <!-- Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
+    <div class="flex" id="root">
+        <div class="title-box">
+          <!-- l'h1 è vuoto; con la notazione a baffo vado a stampare il title contenuto in Data, collegando l'h1 in modo dinamico allo script di VUE -->
+          <h1>{{title}}</h1>
+        </div>
+        <div class="img-box">
+          <!-- Uso direttiva V-Bind per inserire un attributo prendendolo dallo script VUE -->
+          <img v-bind:src="imgLink" alt="Logo di VUE">
+        </div>
+    </div>
+    <!-- /Qui le istruzioni del mio script VUE verranno lette ed eseguite -->
+  </main>
 
 <script src="js/script.js" charset="utf-8"></script>
 </body>

@@ -5,5 +5,63 @@
 }
 
 body{
-  background: red;
+  font-family: 'Train One', cursive;
+  background: #f96363;
+}
+
+header{
+  background: #cc11f0;
+  text-align: center;
+}
+
+header > h2{
+  color: #6300ff;
+  font-size: 60px;
+  padding: 40px 0;
+}
+
+header span{
+  color: 	#ff008d;
+}
+
+main{
+  text-align: center;
+}
+
+h1{
+  color: #ff008d;
+  font-size: 100px;
+  padding: 50px 0;
+  text-decoration: underline;
+}
+
+.title-box{
+  flex-basis: 100%;
+}
+
+.img-box{
+  flex-basis: 100%;
+}
+
+.img-box > img{
+  height:250px;
+  animation: huerotate linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  filter: hue-rotate(100deg);
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@keyframes huerotate {
+  20% {filter: hue-rotate(100deg);}
+  40% {filter: hue-rotate(120deg);}
+  60% {filter: hue-rotate(140deg);}
+  80% {filter: hue-rotate(180deg);}
+  100% {filter: hue-rotate(100deg);}
 }
