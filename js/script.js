@@ -32,9 +32,15 @@ const App = new Vue (
       messColorsUp: function() {
 
         if (App.palette1 == "palette1") {
-          return (App.palette1 = "palette5",  App.palette2 = "palette6", App.palette3 = "palette7", App.palette4 = "palette8");
+          App.palette1 = "palette5";
+          App.palette2 = "palette6";
+          App.palette3 = "palette7";
+          App.palette4 = "palette8";
         } else {
-          return (App.palette1 = 'palette1', App.palette2 = "palette2", App.palette3 = "palette3", App.palette4 = "palette4");
+          App.palette1 = 'palette1';
+          App.palette2 = "palette2";
+          App.palette3 = "palette3";
+          App.palette4 = "palette4";
         }
       },
 
